@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Practice Customer Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+<h1 id="title" padding= auto;> Customer Survey Form</h1>
+<p id="description"> Thank you for taking the time to help us improve our business</p>
+
+<div id="form-container">
+<form action="#"id="survey-form"> 
+ <h2>Name</h2>
+<input type="text" required id="name-label" placeholder="Enter your name">
+ 
+ <h2>Email</h2>
+ <input type="email"required id="email-label" placeholder="Enter your email">
+  
+ <h2>Age (optional)</h2>
+ <input type="number" min=10 max=99 id="Number-label" placeholder="Age">
+ 
+ <div id="current-industry-container"> 
+  <h2>What industry do you work in?</h2>
+  <select id="dropdown">
+    <option value="" disabled selected>Select current role</option>
+    <option>Hospitality</option>
+    <option>Computer and Technology</option>
+    <option>Education</option>
+    <option>Health Care</option>
+    <option>Education</option>
+    <option>Transportation</option>
+    <option>Other</option>
+</select>
+ </div>
+
+ <div id="friendrec-container">
+   <h2>Would you recommend our products to a friend?</h2>
+   
+    <div id="friendrec-group">
+      <input id="Definitely" type="radio" checked>
+   <label for="Definitely">Definitely</label>
+ </div>
+    
+<div id="friendrec-group">   
+      <input id="Maybe" type="radio" name="friend-recommendation">
+      <label for="Maybe">Maybe</label>
+</div>
+  
+<div id="friendrec-group">
+      <input id="Not-sure" type="radio" name="friend-recommendation">
+      <label for="Not-sure">Not sure</label>
+</div>
+     </div>
+  
+  <div id="find-feature">
+<h2>How did you find out about us?</h2>
+  <select id="dropdown-second">
+    <option value="" disabled selected> Select an option</option>
+    <option>A Friend</option>
+    <option>Social Media</option>
+    <option>Advertisment</option>
+    <option>Other</option>
+  </select>
+   </div>
+
+   
+    
+    
+<div id="improvements-container">
+  
+  <h2>What would you like to see improved? (Check all that apply)</h2>
+  
+  <div class="improve-group">
+  <input type="checkbox" id="Product-Variety"/>
+  <label for="Product-variety">Product Variety</label>
+</div>
+
+<div class="improve-group">
+  <input type="checkbox" id="Customer-Service"/>
+  <label for="Customer-service">Customer Service</label>
+</div>
+
+<div class="improve-group">
+  <input type="checkbox" id="Additional-Tutorials"/>
+  <label for="Additional-Tutorials">Addition of Product Tutorials on Website</label>
+</div>
+
+<div class="improve-group">
+  <input type="checkbox" id="Product-Availability"/>
+  <label for="Product-Availability">Product Availability</label>
+</div>
+
+<div class="improve-group">
+  <input type="checkbox" id="Website-Accessibility"/>
+  <label for="Website-Accessibility">Website Accessibility</label>
+</div>
+
+
+
+ <div id="comments">
+   <h2>Any comments or suggestions?</h2>
+    <textarea>
+    </textarea>
+  </div>  
+    
+   <div id="submit-button">
+    <button type ="submit" class="submit-button"> Submit </button>
+   </div>
+ </div>
+</form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
